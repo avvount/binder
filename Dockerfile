@@ -6,4 +6,5 @@ RUN echo "$NB_USER ALL=(ALL) NOPASSWD: ALL">>/etc/sudoers
 USER $NB_USER
 
 COPY --chown=$NB_USER:users . ./
-RUN pip install youtube-dl
+RUN pip install youtube-dl jupyter_contrib_nbextensions
+RUN jupyter contrib nbextension install --user
