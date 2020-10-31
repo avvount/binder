@@ -1,5 +1,3 @@
-FROM ubuntu:18.04
+FROM jupyterhub/singleuser
 
-WORKDIR /
 
-ENTRYPOINT ["/bin/bash"]
